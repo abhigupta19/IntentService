@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 for (String song : songs) {
+                    
                     Intent intent = new Intent(MainActivity.this, MyIntentService.class);
                     intent.putExtra(MESSAGE_KEY,song );
                     startService(intent);
